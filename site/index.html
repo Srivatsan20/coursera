@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+            outline-style: solid;
+            outline-color: black;
+        }
+    </style>
 	<title>Simple Form</title>
-    <!meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-    <h3>Welcome,<br>
-    &nbspPlease fill the following to SignUp</h3>
+    <br><br><h3 style="color: red; font-size: 40px; text-align: center; font-family: arial"><strong><u>Welcome</u></strong></h3>
+    <h3 style="color: indigo; font-size: 30px; text-align: center; font-family: arial"><em>Please Fill the following:</em></h3>
 <form>
-    &nbsp&nbsp&nbsp&nbsp&nbsp<label for="FName">First Name:</label>
+    <div style="text-align: center;">&nbsp&nbsp&nbsp&nbsp&nbsp<label for="FName"><u>First Name:</u></label>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="FName" id="FName" placeholder="Srivatsan" required /><br><br>
-    &nbsp&nbsp&nbsp&nbsp&nbsp<label for="LName">Last Name: </label>
+    &nbsp&nbsp&nbsp&nbsp&nbsp<label for="LName"><u>Last Name:</u> </label>
      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="LName" id="LName" placeholder="Srinivasan" required />
-    <div>
-        <br>&nbsp&nbsp&nbsp&nbsp&nbsp<label for="Gender">Gender:</label><br><br>
+     </div>
+    <div style="text-align: center;">
+        <br>&nbsp&nbsp&nbsp&nbsp&nbsp<label for="Gender"><u>Gender:</u></label><br><br>
         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <input type="radio" name="choice" id="choice1"
         value="choice-1">
@@ -28,14 +35,14 @@
          <label for="choice3">Other</label>
         
     </div>
-    <div><br><br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp<label for="email">email Address:</label>
+    <div style="text-align: center;"><br><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp<label for="email"><u>email Address:</u></label>
         <input type="email" name="email" id="email" placeholder="abc@gmail.com" required /><br><br>
-        &nbsp&nbsp&nbsp&nbsp&nbsp<label for="password">Password:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp<label for="password"><u>Password:</u></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <input type="password" name="password" id="password" pattern=".{8,16}" title="8 to 16 characters" placeholder="Password" required />
     </div>
-    <div>
-        <br>&nbsp&nbsp&nbsp&nbsp&nbsp<label for="Date">DOB:</label><br><br>
+    <div style="text-align: center;">
+        <br>&nbsp&nbsp&nbsp&nbsp&nbsp<label for="Date"><u>DOB:</u></label><br><br>
         &nbsp&nbsp&nbsp&nbsp&nbsp<select name="Date" id="Date">
           <option value="0" selected disabled>Date</option>
           <option value="1">1</option>
@@ -103,8 +110,8 @@
         </select>
         <br><br>&nbsp&nbsp&nbsp&nbsp&nbspClick <a href="www.terms.com">here</a> to view the Terms & Conditions.
         <br><br>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="checkbox" id="checkbox" required />
-        <label for="checkbox">I agree to the terms and conditions.</label><br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <button>SignUp</button>
+        <label for="checkbox">I agree to the terms and conditions.</label><br><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button style="color: black; font-size: 20px; text-align: center;" onclick="alert('Thank You');">SignUp</button><br><br><br>
 
 
     </div>
